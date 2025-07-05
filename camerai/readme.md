@@ -24,7 +24,7 @@
 - Utilitas: numpy, threading, PyInstaller untuk build executable
 
 ---
-
+```
 ## 🏗 Struktur Project
 cameraai/
 ├── camera_handler/ # Modul pengelola webcam & video capture
@@ -37,7 +37,7 @@ cameraai/
 ├── requirements.txt # List dependensi
 ├── README.md
 ├── .gitignore
-
+```
 
 ---
 
