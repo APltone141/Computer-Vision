@@ -1,0 +1,39 @@
+# Core Computer Vision
+opencv-python==4.8.1.78
+numpy==1.24.3
+
+# AI/ML Libraries
+mediapipe==0.10.7
+tensorflow==2.13.0
+
+# GUI Framework
+PyQt5==5.15.9
+PyQt5-Qt5==5.15.2
+PyQt5-sip==12.12.2
+
+# Performance & Utilities
+psutil==5.9.5
+pillow==10.0.0
+scipy==1.11.3
+
+# Optional: Super Resolution (uncomment if needed)
+# torch==2.0.1
+# torchvision==0.15.2
+# basicsr==1.4.2
+# facexlib==0.3.0
+# gfpgan==1.3.8
+# realesrgan==0.3.0
+
+# Optional: Frame Interpolation (uncomment if needed)
+# cupy-cuda11x==12.2.0  # For CUDA support
+# moviepy==1.0.3
+
+# Development Tools
+pytest==7.4.2
+black==23.7.0
+flake8==6.0.0
+
+# Build Tools
+pyinstaller==5.13.2
+setuptools==68.2.2
+wheel==0.41.2
