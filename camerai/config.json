@@ -1,0 +1,84 @@
+{
+  "camera": {
+    "default_index": 0,
+    "width": 640,
+    "height": 480,
+    "fps": 30,
+    "queue_size": 64
+  },
+  "modules": {
+    "autofocus": {
+      "enabled": false,
+      "min_confidence": 0.6,
+      "padding": 50,
+      "alpha": 0.4,
+      "min_crop_ratio": 0.6
+    },
+    "tracking": {
+      "enabled": false,
+      "mode": "face",
+      "min_confidence": 0.6,
+      "smoothing_factor": 0.3,
+      "zoom_factor": 1.0,
+      "max_offset": 0.3
+    },
+    "motion_detection": {
+      "enabled": false,
+      "sensitivity": 50,
+      "min_area": 500,
+      "history_length": 10
+    },
+    "gesture_control": {
+      "enabled": false,
+      "min_detection_confidence": 0.7,
+      "min_tracking_confidence": 0.5,
+      "cooldown": 1.0
+    },
+    "super_resolution": {
+      "enabled": false,
+      "scale_factor": 2.0,
+      "model_name": "RealESRGAN_x4plus"
+    },
+    "fps_interpolator": {
+      "enabled": false,
+      "target_fps": 60.0,
+      "interpolation_method": "opencv"
+    }
+  },
+  "gui": {
+    "window_width": 1200,
+    "window_height": 800,
+    "theme": "default",
+    "show_fps": true,
+    "show_stats": true,
+    "auto_start_camera": true
+  },
+  "performance": {
+    "max_fps": 60,
+    "quality_mode": "balanced",
+    "enable_logging": true,
+    "log_level": "INFO",
+    "enable_performance_monitoring": true
+  },
+  "recording": {
+    "output_dir": "recordings",
+    "format": "mp4",
+    "codec": "H264",
+    "quality": "high",
+    "auto_record": false
+  },
+  "ai_models": {
+    "face_detection": "mediapipe",
+    "hand_detection": "mediapipe",
+    "super_resolution": "realesrgan",
+    "fps_interpolation": "opencv"
+  },
+  "advanced": {
+    "enable_parallel_processing": true,
+    "max_workers": 3,
+    "enable_fallback": true,
+    "debug_mode": false,
+    "save_screenshots": false,
+    "screenshot_dir": "screenshots"
+  }
+}
